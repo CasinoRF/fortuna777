@@ -30,8 +30,9 @@
             margin: 0;
             padding: 0;
             background-image: url('fondo.jpg'); /* Reemplaza fondo.jpg con la ruta de tu imagen */
-            background-size: cover;
-            background-position: center;
+            background-size: contain; /* Mantiene las proporciones de la imagen */
+            background-repeat: no-repeat;
+            background-position: center center; /* Centra la imagen */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -85,6 +86,11 @@
 
         /* Ajustes para pantallas más pequeñas */
         @media (max-width: 768px) {
+            body {
+                background-size: cover; /* Llena la pantalla en móviles */
+                background-position: center top; /* Centra mejor en móviles */
+            }
+
             .titulo {
                 font-size: 36px;
             }
@@ -103,7 +109,7 @@
 <body>
     <div class="contenedor">
         <h1 class="titulo">RED FORTUNA</h1>
-        <p class="texto">SOLICITA TU USUARIO GRATUITO A MI WHATSAPP. ¡Aprovecha todas las promociones disponibles!</p>
+        <p class="texto">Solicita tu usuario gratuito. ¡Aprovecha todas las promociones disponibles!</p>
         <a href="https://wa.link/qb056f" class="boton-usuario" onclick="fbq('track', 'Lead');">QUIERO UN USUARIO</a>
     </div>
 </body>
