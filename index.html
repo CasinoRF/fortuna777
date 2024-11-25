@@ -23,16 +23,15 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
     <style>
-        /* Estilos generales y responsive */
         body {
             width: 100%;
             height: 100vh;
             margin: 0;
             padding: 0;
-            background-image: url('fondo.jpg'); /* Reemplaza fondo.jpg con la ruta de tu imagen */
-            background-size: contain; /* Mantiene las proporciones de la imagen */
+            background-image: url('fondo.jpg');
+            background-size: cover;
             background-repeat: no-repeat;
-            background-position: center center; /* Centra la imagen */
+            background-position: center center;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -41,76 +40,61 @@
 
         .contenedor {
             width: 90%;
-            max-width: 600px;
+            max-width: 500px;
             margin: 0 auto;
             text-align: center;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejor legibilidad */
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 20px;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .titulo {
-            font-size: 48px;
+            font-size: 36px;
             font-weight: bold;
-            color: #FF5722; /* Color vibrante */
+            color: #FF5722;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .texto {
-            font-size: 26px;
+            font-size: 18px;
             color: #333;
             margin-bottom: 20px;
         }
 
-        .boton-usuario {
-            background-color: #FF0000; /* Color rojo */
+        input[type="tel"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #FF0000;
             color: #fff;
-            padding: 15px 30px;
+            padding: 10px 20px;
+            font-size: 18px;
             border: none;
             border-radius: 5px;
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: none;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-            animation: mover 1s infinite alternate; /* Animación de movimiento */
-            display: inline-block;
+            cursor: pointer;
         }
 
-        /* Animación para el botón */
-        @keyframes mover {
-            from { transform: translateY(0); }
-            to { transform: translateY(-5px); }
-        }
-
-        /* Ajustes para pantallas más pequeñas */
-        @media (max-width: 768px) {
-            body {
-                background-size: cover; /* Llena la pantalla en móviles */
-                background-position: center top; /* Centra mejor en móviles */
-            }
-
-            .titulo {
-                font-size: 36px;
-            }
-
-            .texto {
-                font-size: 20px;
-            }
-
-            .boton-usuario {
-                font-size: 20px;
-                padding: 12px 25px;
-            }
+        button:hover {
+            background-color: #CC0000;
         }
     </style>
 </head>
 <body>
     <div class="contenedor">
-        <h1 class="titulo">RED FORTUNA</h1>
-        <p class="texto">Solicita tu usuario gratuito. ¡Aprovecha todas las promociones disponibles!</p>
-        <a href="https://wa.link/uwddc5" class="boton-usuario" onclick="fbq('track', 'Lead');">QUIERO UN USUARIO</a>
+        <h1 class="titulo">¡Promoción Exclusiva!</h1>
+        <p class="texto">Deja tu número de teléfono y el cajero del casino te escribirá con un regalo especial: <b>300 fichas extras</b> con tu primera carga de 1000.</p>
+        <form action="guardar.php" method="POST">
+            <input type="tel" name="telefono" placeholder="Ingresa tu número de teléfono" required>
+            <br>
+            <button type="submit">¡Quiero mi regalo!</button>
+        </form>
     </div>
 </body>
 </html>
