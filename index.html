@@ -15,15 +15,21 @@
       background-size: cover;
       font-family: 'Inter', sans-serif;
       color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
     .container {
       max-width: 800px;
-      margin: 0 auto;
       padding: 20px;
       text-align: center;
       background: rgba(0, 0, 0, 0.7);
       border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .logo {
@@ -32,11 +38,6 @@
 
     .logo img {
       width: 200px;
-    }
-
-    .main-title {
-      font-size: 24px;
-      margin-bottom: 1rem;
     }
 
     .description {
@@ -87,7 +88,9 @@
     }
 
     footer {
-      margin-top: 3rem;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
       font-size: 14px;
       color: #ccc;
     }
@@ -116,7 +119,6 @@
     <div class="logo">
       <img src="img/logo.png" alt="Casino RedFortuna">
     </div>
-    <div class="main-title">Bienvenido a Casino RedFortuna</div>
     <div class="description">Para crear tu cuenta debes escribir tu nombre y enviarnos un mensaje por WhatsApp. ¡Es rápido y fácil!</div>
 
     <input type="text" id="usernameInput" class="whatsapp-input" placeholder="Tu nombre" />
