@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Fortuna</title>
+    <!-- Meta Pixel Code -->
+    <meta name="facebook-pixel-code" content="<!-- Aquí puedes agregar tu código de pixel -->">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('fondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .info {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        input[type="text"] {
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: darkred;
+        }
+
+        .details {
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .info {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .details {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Red Fortuna</h1>
+        <p class="info">Para crear tu cuenta, escribe tu nombre y envíanos un WhatsApp haciendo click en el botón de abajo.</p>
+        <input type="text" placeholder="Ingresa tu nombre" id="name">
+        <a class="btn" id="whatsapp-link" href="#">Crear tu Usuario</a>
+        <div class="details">
+            <p>Mínimo de carga: $1000</p>
+            <p>Mínimo retiro: $4000</p>
+            <p>Retiros de hasta $500,000 diarios</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('whatsapp-link').addEventListener('click', function () {
+            const name = document.getElementById('name').value;
+            const phone = '+5493516743214';
+            if (name) {
+                const url = `https://wa.me/${phone}?text=Hola, mi nombre es ${encodeURIComponent(name)} y quiero crear mi usuario en Red Fortuna.`;
+                this.setAttribute('href', url);
+            } else {
+                alert('Por favor, ingresa tu nombre antes de continuar.');
+            }
+        });
+    </script>
+</body>
+</html>
