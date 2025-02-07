@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi sitio</title>
+    <title>RED FORTUNA - CASINO ONLINE</title>
 </head>
 <body>
     <h1>¡Hola, mundo!</h1>
