@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CASINO REDFORTUNA</title>
+    <title>CASINO REDFORTUNA - BONOS DE 200% CON TUS CARGAS</title>
+    
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1060176288977184');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1060176288977184&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s) {
+            if(f.fbq) return; n = f.fbq = function() {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if(!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1060176288977184');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1060176288977184&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
         body {
             margin: 0;
@@ -104,23 +109,6 @@ src="https://www.facebook.com/tr?id=1060176288977184&ev=PageView&noscript=1"
         }
     </style>
 </head>
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1060176288977184');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1060176288977184&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 <body>
     <div class="container">
         <h1>CASINO REDFORTUNA - BONOS DE 200% CON TUS CARGAS</h1>
@@ -135,12 +123,13 @@ src="https://www.facebook.com/tr?id=1060176288977184&ev=PageView&noscript=1"
     </div>
 
     <script>
-        document.getElementById('whatsapp-link').addEventListener('click', function () {
-            const name = document.getElementById('name').value;
+        document.getElementById('whatsapp-link').addEventListener('click', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value.trim();
             const phone = '+5493844458897';
             if (name) {
                 const url = `https://wa.me/${phone}?text=Hola, mi nombre es ${encodeURIComponent(name)} y quiero crear mi usuario en Red Fortuna.`;
-                this.setAttribute('href', url);
+                window.location.href = url;
             } else {
                 alert('Por favor, ingresa tu nombre antes de continuar.');
             }
