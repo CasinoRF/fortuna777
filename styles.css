@@ -35,7 +35,8 @@ h1, h2 {
 }
 
 .whatsapp-btn img {
-    width: 20px;
+    width: 30px;
+    height: auto;
     vertical-align: middle;
     margin-right: 10px;
 }
