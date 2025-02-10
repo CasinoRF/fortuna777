@@ -1,20 +1,44 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    margin: 0;
+    padding: 0;
     background: url('fondo.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #fff;
+    color: white;
+    text-align: center;
+    padding-top: 200px; /* Ajusta este valor según la altura de los íconos superiores */
 }
 
-h1, h2 {
-    color: #ffcc00;
+/* Contenedor del logo */
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
+/* Contenido general */
+.content {
+    margin-top: 200px; /* Ajusta según la altura de los íconos */
+}
+
+/* Estilos del header */
+header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Promoción */
 .promocion {
-    background: rgba(255, 0, 0, 0.8);
+    background-color: rgba(255, 0, 0, 0.8);
     padding: 20px;
+    margin: 20px auto;
     border-radius: 10px;
-    margin: 20px;
+    max-width: 80%;
 }
 
 .destacado {
@@ -22,27 +46,31 @@ h1, h2 {
     color: #00ff00;
 }
 
+/* Botón de WhatsApp */
 .whatsapp-btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     background-color: #25D366;
     color: white;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
+    padding: 15px 20px;
     text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
-    animation: pulse 1.5s infinite;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe57;
 }
 
 .whatsapp-btn img {
     width: 30px;
-    height: auto;
-    vertical-align: middle;
     margin-right: 10px;
 }
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 14px;
 }
