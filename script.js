@@ -10,8 +10,4 @@ document.addEventListener("DOMContentLoaded", function () {
         whatsappBtn.style.transform = "scale(1)";
     });
 
-    // Mensaje emergente a los 5 segundos para incentivar el clic
-    setTimeout(() => {
-        alert("📲 ¡Únete a Red Fortuna y recibe un BONO de 200%! Escribe por WhatsApp ahora.");
-    }, 5000);
-});
+   
