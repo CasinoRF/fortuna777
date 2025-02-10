@@ -1,150 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Casino RedFortuna</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('fondo.jpg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Inter', sans-serif;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      max-width: 800px;
-      padding: 20px;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.7);
-      border-radius: 10px;
-    }
-
-    .logo img {
-      width: 200px;
-    }
-
-    .description {
-      font-size: 18px;
-      margin: 1rem 0;
-    }
-
-    .whatsapp-input {
-      width: 100%;
-      max-width: 400px;
-      padding: 10px;
-      margin: 10px 0;
-      border: 2px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-      box-sizing: border-box;
-    }
-
-    .button {
-      display: inline-block;
-      background: linear-gradient(45deg, #ff0000, #ff6600);
-      color: white;
-      padding: 12px 24px;
-      font-size: 20px;
-      font-family: "Bebas Neue", sans-serif;
-      text-transform: uppercase;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8);
-      transition: all 0.3s ease, transform 0.2s ease;
-      animation: pulse 1.5s infinite;
-    }
-
-    .button:hover {
-      background: linear-gradient(45deg, #ff6600, #ff0000);
-      transform: scale(1.1);
-    }
-
-    @keyframes pulse {
-      0% { box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8); }
-      50% { box-shadow: 0px 0px 20px rgba(255, 100, 0, 1); }
-      100% { box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8); }
-    }
-
-    .info {
-      margin-top: 20px;
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    .info h3 {
-      font-size: 22px;
-      margin: 1rem 0;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      font-size: 14px;
-      color: #ccc;
-    }
-  </style>
-  
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1060176288977184');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1060176288977184&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Fortuna - Casino Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1060176288977184');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1060176288977184&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-      <img src="img/logo.png" alt="Casino RedFortuna">
-    </div>
-    <div class="description">Para crear tu cuenta debes escribir tu nombre y enviarnos un mensaje por WhatsApp. ¡Es rápido y fácil!</div>
-    <input type="text" id="usernameInput" class="whatsapp-input" placeholder="Tu nombre" />
-    <a href="#" class="button" id="whatsappButton">Crear Usuario</a>
-    <div class="info">
-      <p><strong>Mínimo de carga:</strong> $500</p>
-      <p><strong>Mínimo de retiro:</strong> $3.000</p>
-      <h3>Hasta $1.000.000 diarios por usuario</h3>
-      <p>RULETA EN VIVO - SLOTS - APUESTAS DEPORTIVAS Y MÁS</p>
-    </div>
-  </div>
-  <footer>
-    &copy; 2025 Casino RedFortuna. Todos los derechos reservados, juega con responsabilidad +18.
-  </footer>
-  <script>
-    document.getElementById("whatsappButton").addEventListener("click", function () {
-      const username = document.getElementById("usernameInput").value;
-      const telefono = "5493844458897";
-      if (username.trim() === "") {
-        alert("Por favor, escribe tu nombre antes de continuar.");
-        return;
-      }
-      const mensaje = `Hola, me gustaría crear una cuenta. Mi nombre es: ${username}`;
-      const link = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
-      window.open(link, "_blank");
-    });
-  </script>
+    <header>
+        <h1>¡Bienvenido a Red Fortuna!</h1>
+        <p>Tu mejor opción en apuestas online</p>
+    </header>
+
+    <section class="promocion">
+        <h2>🔥 ¡PROMOCIÓN DEL DÍA! 🔥</h2>
+        <p>Bono del <span class="destacado">200%</span> en tu primer depósito.</p>
+        <p>Depósito mínimo: <span class="destacado">$500</span> | Retiro mínimo: <span class="destacado">$4,000</span></p>
+        <p>Pagamos hasta <span class="destacado">$1,000,000</span> diarios.</p>
+    </section>
+
+    <section class="beneficios">
+        <h2>🎰 ¿Por qué elegir Red Fortuna? 🎰</h2>
+        <ul>
+            <li>✔️ Casino online verificado y seguro.</li>
+            <li>✔️ Gran variedad de juegos y apuestas.</li>
+            <li>✔️ Retiros rápidos y confiables.</li>
+            <li>✔️ Soporte las 24 horas.</li>
+        </ul>
+    </section>
+
+    <section class="cta">
+        <a href="https://wa.me/543844458897" class="whatsapp-btn">
+            <img src="whatsapp-icon.png" alt="WhatsApp"> ESCRÍBEME PARA GENERAR TU USUARIO
+        </a>
+    </section>
+
+    <footer>
+        <p>Síguenos en <a href="https://www.facebook.com/GeraBet" target="_blank">Facebook</a></p>
+        <p>&copy; 2025 Red Fortuna. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
