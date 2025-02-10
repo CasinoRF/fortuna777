@@ -1,77 +1,90 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: url('fondo-casino.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-}
-
-header {
-    padding: 20px;
-    margin-top: 100px;
-}
-
-.promocion, .beneficios, .cta {
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8);
-}
-
-.promocion h2 {
-    color: #ffcc00;
-}
-
-.destacado {
-    color: #00ff00;
-    font-weight: bold;
-}
-
-/* Botón de WhatsApp con brillo y efectos llamativos */
-.whatsapp-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: linear-gradient(45deg, #25d366, #128C7E);
-    color: white;
-    padding: 15px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 50px;
-    box-shadow: 0px 0px 15px #25d366;
-    animation: brillo 1.5s infinite alternate;
-    transition: transform 0.3s ease-in-out;
-}
-
-.whatsapp-btn:hover {
-    transform: scale(1.1);
-}
-
-@keyframes brillo {
-    0% { box-shadow: 0px 0px 10px #25d366; }
-    100% { box-shadow: 0px 0px 25px #25d366; }
-}
-
-/* Pie de página */
-footer {
-    margin-top: 30px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-}
-
+/* Establecer fondo del sitio */
 body {
     background-image: url('fondo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
+/* Alinear los logos */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Sección de la promoción */
+.promocion {
+    background: rgba(255, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+.destacado {
+    font-weight: bold;
+    color: yellow;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.8);
+    position: relative;
+    overflow: hidden;
+    animation: brillo 1.5s infinite alternate;
+}
+
+.whatsapp-btn img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Animación de brillo en el botón */
+@keyframes brillo {
+    0% { box-shadow: 0 0 10px rgba(37, 211, 102, 0.6); }
+    100% { box-shadow: 0 0 30px rgba(37, 211, 102, 1); }
+}
+
+/* Mensaje debajo del botón */
+.mensaje-cta {
+    font-size: 14px;
+    margin-top: 10px;
+    font-style: italic;
+    color: lightyellow;
+}
+
+/* Sección de beneficios */
+.beneficios {
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.beneficios ul {
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios li {
+    font-size: 16px;
+    margin: 10px 0;
+}
