@@ -48,12 +48,24 @@ header {
     max-width: 100%;
 }
 
+/* Texto llamativo para "¿Por qué elegir Red Fortuna?" */
 .destacado {
     font-weight: bold;
     color: #00ff00;
 }
 
+.por-que-elegir {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black, -2px -2px 4px yellow; /* Contorno negro y amarillo */
+}
+
 /* Botón de WhatsApp */
+.whatsapp-container {
+    margin-top: 15px;
+}
+
 .whatsapp-btn {
     display: flex;
     align-items: center;
