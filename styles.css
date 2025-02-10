@@ -7,13 +7,12 @@ body {
     padding: 0;
 }
 
-.fondo {
+.fondo img {
     width: 100%;
     height: auto;
 }
 
 header {
-    position: relative;
     padding: 20px;
     margin-top: -50px;
 }
