@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     
-    <!-- Meta Pixel Code Mejorado -->
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n.loaded=!0;n.version='2.0';
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '1060176288977184'); // Tu ID de Meta Pixel
-    fbq('track', 'PageView'); // Evento de vista de página
+    fbq('init', '1060176288977184');
+    fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1060176288977184&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- Fin Meta Pixel Code -->
+    src="https://www.facebook.com/tr?id=1060176288977184&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="logo-red-fortuna.png" alt="Red Fortuna">
+            <img src="joker-logo.png" alt="Joker's Jewels">
+        </div>
         <h1>¡Bienvenido a Red Fortuna!</h1>
         <p>Tu mejor opción en apuestas online</p>
     </header>
@@ -39,9 +41,8 @@
         <p>Pagamos hasta <span class="destacado">$1,000,000</span> diarios.</p>
     </section>
 
-    <!-- Botón de WhatsApp entre la promoción y los beneficios -->
     <section class="cta">
-        <a href="https://wa.me/543844458897" class="whatsapp-btn" onclick="fbq('track', 'Lead');">
+        <a href="https://wa.me/543844458897" class="whatsapp-btn">
             <img src="whatsapp-icon.png" alt="WhatsApp"> ESCRÍBEME PARA GENERAR TU USUARIO
         </a>
     </section>
