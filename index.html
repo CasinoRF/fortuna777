@@ -6,20 +6,36 @@
     <title>Red Fortuna - Casino Online</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    
+    <!-- Meta Pixel y Token -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'TU_PIXEL_ID'); 
+        fbq('track', 'PageView');
+    </script>
 </head>
 <body>
     <header>
-        <img src="fondo.jpg" alt="Fondo del sitio" class="background-image">
+        <div class="background-overlay"></div>
     </header>
-    
+
     <main>
-        <section class="welcome">
-            <h1>🎰 ¡Bienvenido a Red Fortuna! 🎰</h1>
-            <p>Tu plataforma de apuestas en línea 100% segura y confiable.</p>
+        <section id="bienvenida">
+            <h1>Bienvenidos a Red Fortuna</h1>
+            <p>Tu mejor opción en juegos online con pagos instantáneos y total seguridad.</p>
         </section>
-        
-        <section class="features">
-            <h2>🎰 ¿Por qué elegir Red Fortuna? 🎰</h2>
+
+        <a href="https://wa.me/3844458897" class="whatsapp-button">Solicitar usuario gratis y 200% de bono</a>
+
+        <section id="porque-elegir">
+            <h2>🎀 ¿Por qué elegir Red Fortuna? 🎀</h2>
             <ul>
                 <li>✔️ Plataforma 100% segura y confiable.</li>
                 <li>✔️ Gran variedad de juegos y apuestas en vivo.</li>
@@ -28,23 +44,16 @@
                 <li>✔️ Protección total de tu privacidad y discreción garantizada.</li>
             </ul>
         </section>
-        
-        <section class="testimonials">
+
+        <section id="opiniones">
             <h2>💬 Opiniones de Nuestros Jugadores 💬</h2>
-            <div class="testimonial">
-                <p>"Increíble experiencia, pagaron mi retiro en minutos. Muy recomendado!" - <strong>claudiaGBET</strong></p>
-            </div>
-            <div class="testimonial">
-                <p>"Juegos muy fluidos y atención rápida. Un casino de confianza." - <strong>juanGBET</strong></p>
-            </div>
-            <div class="testimonial">
-                <p>"Lo mejor es la discreción y la seguridad que brindan. Genial!" - <strong>martinGBET</strong></p>
+            <div class="comentarios">
+                <p><strong>claudiaGBET:</strong> "Red Fortuna paga en el momento, me encantó la experiencia!"</p>
+                <p><strong>matiasGBET:</strong> "La mejor plataforma, súper confiable y rápida en los pagos."</p>
+                <p><strong>sofiaGBET:</strong> "Me encanta jugar en Red Fortuna, retiro mi dinero sin problemas!"</p>
+                <p><strong>juanGBET:</strong> "Privacidad y seguridad garantizada, 10/10."</p>
             </div>
         </section>
     </main>
-    
-    <a href="https://wa.me/3844458897" class="whatsapp-button">
-        <img src="whats.png" alt="WhatsApp">
-    </a>
 </body>
 </html>
