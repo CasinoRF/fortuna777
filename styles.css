@@ -66,3 +66,12 @@ footer {
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
 }
+
+body {
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
