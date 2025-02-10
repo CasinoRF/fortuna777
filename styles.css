@@ -18,6 +18,11 @@ body {
     margin-top: 20px;
 }
 
+/* Contenedor principal para que el contenido comience debajo de los iconos */
+main {
+    margin-top: 150px; /* Ajusta esta medida si es necesario */
+}
+
 /* Sección de la promoción */
 .promocion {
     background: rgba(255, 0, 0, 0.8);
