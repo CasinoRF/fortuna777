@@ -28,7 +28,9 @@ body {
 }
 
 .whatsapp-btn {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #25d366;
     color: white;
     padding: 15px 20px;
@@ -39,7 +41,17 @@ body {
     position: relative;
     animation: brillo 1.5s infinite alternate;
     box-shadow: 0 0 10px #25d366;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    max-width: 300px; /* Evita que sea muy grande en pantallas grandes */
+    margin: 20px auto; /* Centra el botón */
 }
+
+.whatsapp-btn img {
+    width: 25px; /* Ajusta el tamaño del icono */
+    height: 25px;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
 
 @keyframes brillo {
     0% { box-shadow: 0 0 10px #25d366; }
