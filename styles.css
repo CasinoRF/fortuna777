@@ -1,16 +1,12 @@
-/* Establecer fondo del sitio */
 body {
-    background-image: url('fondo.jpg');
+    background: url("fondo.jpg") no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: white;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 
-/* Alinear los logos */
 .logo-container {
     display: flex;
     justify-content: center;
@@ -18,78 +14,34 @@ body {
     margin-top: 20px;
 }
 
-/* Contenedor principal para que el contenido comience debajo de los iconos */
-main {
-    margin-top: 150px; /* Ajusta esta medida si es necesario */
+.logo {
+    max-width: 150px;
+    height: auto;
 }
 
-/* Sección de la promoción */
-.promocion {
-    background: rgba(255, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 500px;
-}
-
-.destacado {
-    font-weight: bold;
-    color: yellow;
-}
-
-/* Botón de WhatsApp */
-.whatsapp-btn {
-    display: inline-flex;
-    align-items: center;
-    background: linear-gradient(45deg, #25D366, #128C7E);
-    padding: 15px 25px;
-    border-radius: 50px;
-    text-decoration: none;
+.bienvenida {
+    margin-top: 20px;
     color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    padding: 15px 20px;
     font-size: 18px;
     font-weight: bold;
-    box-shadow: 0 0 20px rgba(37, 211, 102, 0.8);
-    position: relative;
-    overflow: hidden;
-    animation: brillo 1.5s infinite alternate;
-}
-
-.whatsapp-btn img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-/* Animación de brillo en el botón */
-@keyframes brillo {
-    0% { box-shadow: 0 0 10px rgba(37, 211, 102, 0.6); }
-    100% { box-shadow: 0 0 30px rgba(37, 211, 102, 1); }
-}
-
-/* Mensaje debajo del botón */
-.mensaje-cta {
-    font-size: 14px;
-    margin-top: 10px;
-    font-style: italic;
-    color: lightyellow;
-}
-
-/* Sección de beneficios */
-.beneficios {
-    margin-top: 30px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
     border-radius: 10px;
-    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    animation: brillo 1.5s infinite alternate;
+    box-shadow: 0 0 10px #25d366;
 }
 
-.beneficios ul {
-    list-style: none;
-    padding: 0;
-}
-
-.beneficios li {
-    font-size: 16px;
-    margin: 10px 0;
+@keyframes brillo {
+    0% { box-shadow: 0 0 10px #25d366; }
+    100% { box-shadow: 0 0 20px #25d366; }
 }
