@@ -1,32 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Animación de brillo para el botón de WhatsApp
     const whatsappBtn = document.querySelector(".whatsapp-btn");
-    if (whatsappBtn) {
-        setInterval(() => {
-            whatsappBtn.classList.toggle("brillo");
-        }, 1000);
-    }
 
-    // Seguimiento de clics en el botón de WhatsApp con Meta Pixel
-    whatsappBtn.addEventListener("click", function () {
-        if (typeof fbq !== "undefined") {
-            fbq("track", "Contact", { method: "WhatsApp" });
-        }
+    // Efecto al pasar el mouse sobre el botón de WhatsApp
+    whatsappBtn.addEventListener("mouseover", function () {
+        whatsappBtn.style.transform = "scale(1.1)";
     });
 
-    // Seguimiento de vista en la sección de promoción
-    const promoSection = document.querySelector(".promocion");
-    if (promoSection) {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    if (typeof fbq !== "undefined") {
-                        fbq("track", "ViewPromotion");
-                    }
-                    observer.disconnect();
-                }
-            });
-        }, { threshold: 0.5 });
-        observer.observe(promoSection);
-    }
+    whatsappBtn.addEventListener("mouseleave", function () {
+        whatsappBtn.style.transform = "scale(1)";
+    });
+
+    // Mensaje emergente a los 5 segundos para incentivar el clic
+    setTimeout(() => {
+        alert("📲 ¡Únete a Red Fortuna y recibe un BONO de 200%! Escribe por WhatsApp ahora.");
+    }, 5000);
 });
